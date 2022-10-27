@@ -1,4 +1,5 @@
-    <h1> align="center">PreEntrega2-Toffolo</h1>
+<div>
+    <h1 align="center">PreEntrega2-Toffolo</h1>
 </div>
 <div id="header" align="center">
      <h1 align="center"> ¡Hola a todos! 👋 </h1>
