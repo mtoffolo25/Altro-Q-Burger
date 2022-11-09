@@ -1,301 +1,322 @@
-  * {
-    padding: 0;
-    margin: 0;
-  }
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0; }
 
-  .index {
-    display: flex;
-    flex-direction: column;
-  }
+.index {
+  display: flex;
+  flex-direction: column; }
 
+.nav_inicio {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center; }
+
+.logo_padre {
+  width: 150px;
+  height: 100px;
+  animation-duration: 3s;
+  animation-name: aparecer;
+  animation-iteration-count: 1; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.lista {
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 35px; }
+
+nav ul li {
+  list-style: none;
+  padding-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%; }
+
+nav ul li a {
+  text-decoration: none;
+  color: #26263a;
+  font-weight: bold;
+  transition: 0.5s; }
+
+nav ul li a:hover {
+  color: #fd8700; }
+
+.inicio {
+  color: #fd8700; }
+
+.imagen_fondo {
+  display: block;
+  background-image: url("../Assets/Images/hamburguesa.jpg");
+  background-color: #ffffff;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  text-align: center;
+  animation-name: efecto_fondo;
+  animation-duration: 2s;
+  animation-iteration-count: 1; }
+
+@keyframes efecto_fondo {
+  0% {
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
+
+.footer_index {
+  background-image: linear-gradient(90deg, #fd8700, #ffd71d);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  border-top-color: #ffffff;
+  margin-top: auto; }
+
+.logo_footer {
+  margin-top: 22px;
+  width: 125px;
+  height: 100px;
+  padding: 0px;
+  border-radius: 50%; }
+
+.footer_index h1 {
+  width: 300px;
+  height: 30px;
+  text-align: center;
+  font-size: 17px;
+  margin-top: 65px;
+  color: black; }
+
+/* Vista mobile */
+@media (max-width: 768px) {
   .nav_inicio {
+    width: 100vw;
     background-color: #ffffff;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-  }
-
+    align-items: center; }
   .logo_padre {
-    width: 150px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
     height: 100px;
     animation-duration: 3s;
     animation-name: aparecer;
-    animation-iteration-count: 1;
-  }
-
+    animation-iteration-count: 1; }
   @keyframes aparecer {
     0% {
-      opacity: 0;
-    }
-
+      opacity: 0; }
     100% {
-      opacity: 1;
-    }
-  }
-
+      opacity: 1; } }
   .lista {
-    width: 600px;
+    width: 400px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-top: 35px;
-  }
-
-  nav ul li {
-    list-style: none;
-    padding-top: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-  }
-
-  nav ul li a {
-    text-decoration: none;
-    color: #26263a;
-    font-weight: bold;
-    transition: 0.5s;
-  }
-
-  nav ul li a:hover {
-    color: #fd8700;
-  }
-
-  .inicio {
-    color: #fd8700;
-  }
-
+    padding-top: 35px; }
   .imagen_fondo {
+    height: 100vh;
+    width: 100vw;
     display: block;
+    flex-direction: column;
     background-image: url("../Assets/Images/hamburguesa.jpg");
     background-color: #ffffff;
-    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: rgb(0, 0, 0);
+    color: black;
     text-align: center;
     animation-name: efecto_fondo;
     animation-duration: 2s;
-    animation-iteration-count: 1;
-  }
-
+    animation-iteration-count: 1; }
   @keyframes efecto_fondo {
     0% {
-      opacity: 0%;
-    }
-
+      opacity: 0%; }
     100% {
-      opacity: 100%;
-    }
-  }
-
+      opacity: 100%; } }
   .footer_index {
     background-image: linear-gradient(90deg, #fd8700, #ffd71d);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     height: 150px;
     border-top-color: #ffffff;
-    margin-top: auto;
-  }
-
-  .logo_footer {
-    margin-top: 22px;
-    width: 125px;
-    height: 100px;
-    padding: 0px;
-    border-radius: 50%;
-  }
-
+    margin-top: auto; }
+  .lista {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 15px; }
+  nav ul li {
+    list-style: none;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px; }
   .footer_index h1 {
     width: 300px;
     height: 30px;
     text-align: center;
-    font-size: 17px;
+    font-size: 10px;
     margin-top: 65px;
-    color: black;
-  }
+    color: black; } }
 
-  /* Vista mobile */
+/* Pedidos */
+.pedidos {
+  color: #fd8700; }
 
-  @media (max-width: 768px) {
-    .nav_inicio {
-      width: 100vw;
-      background-color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
+.tipos_hamburguesas {
+  display: grid;
+  grid-template-areas: "cheese doblecuarto onion bacon clasica";
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  height: 100%;
+  width: 100%; }
 
-    .logo_padre {
-      display: flex;
-      flex-direction: row;
-      align-content: center;
-      height: 100px;
-      animation-duration: 3s;
-      animation-name: aparecer;
-      animation-iteration-count: 1;
-    }
+.tipos_hamburguesas div {
+  width: 100%;
+  height: 88vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: wheat;
+  transition: 1s;
+  opacity: 85%; }
 
-    @keyframes aparecer {
-      0% {
-        opacity: 0;
-      }
+.tipos_hamburguesas div:hover {
+  transform: scale(1.01);
+  opacity: 100%; }
 
-      100% {
-        opacity: 1;
-      }
-    }
+.tipos_hamburguesas div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: relative; }
 
-    .lista {
-      width: 400px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      padding-top: 35px;
-    }
+.tipos_hamburguesas div h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-stretch: ultra-condensed;
+  font-variant: small-caps;
+  margin-bottom: 400px;
+  color: #fd8700;
+  position: absolute;
+  font-stretch: expanded;
+  text-align: center;
+  width: 5cm; }
 
-    .imagen_fondo {
-      height: 100vh;
-      width: 100vw;
-      display: block;
-      flex-direction: column;
-      background-image: url("../Assets/Images/hamburguesa.jpg");
-      background-color: #ffffff;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      color: rgb(0, 0, 0);
-      text-align: center;
-      animation-name: efecto_fondo;
-      animation-duration: 2s;
-      animation-iteration-count: 1;
-    }
+.cheese {
+  grid-area: cheese;
+  opacity: 80%; }
 
-    @keyframes efecto_fondo {
-      0% {
-        opacity: 0%;
-      }
+.doble_cuarto {
+  grid-area: doblecuarto;
+  opacity: 80%; }
 
-      100% {
-        opacity: 100%;
-      }
-    }
+.onion {
+  grid-area: onion;
+  opacity: 80%; }
 
-    .footer_index {
-      background-image: linear-gradient(90deg, #fd8700, #ffd71d);
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      bottom: 0;
-      width: 100vw;
-      height: 150px;
-      border-top-color: #ffffff;
-      margin-top: auto;
-    }
+.bacon {
+  grid-area: bacon;
+  opacity: 80%; }
 
-    .lista {
-      width: 100vw;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      padding-bottom: 15px;
-    }
+.clasica {
+  grid-area: clasica;
+  opacity: 80%; }
 
-    nav ul li {
-      list-style: none;
-      padding-top: 10px;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 10px;
-    }
+.tipos_hamburguesas div button {
+  text-align: center;
+  border-radius: 25px;
+  background-color: #26263a;
+  color: #ffffff;
+  width: 6cm;
+  margin-top: 500px;
+  position: absolute; }
 
-    .footer_index h1 {
-      width: 300px;
-      height: 30px;
-      text-align: center;
-      font-size: 10px;
-      margin-top: 65px;
-      color: black;
-    }
-  }
+.tipos_hamburguesas div button:hover {
+  background-color: #fd8700;
+  color: #ffffff;
+  transform: scale(1.1); }
 
-  /* Pedidos */
+button p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-stretch: expanded;
+  font-variant: small-caps; }
 
-  .pedidos {
-    color: #fd8700;
-  }
+.footer_pedidos {
+  background-image: linear-gradient(90deg, #fd8700, #ffd71d);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  border-top-color: #ffffff; }
 
+.logo_footer_pedidos {
+  margin-top: 22px;
+  width: 125px;
+  height: 100px;
+  padding: 0px;
+  border-radius: 50%; }
+
+.footer_pedidos h1 {
+  width: 300px;
+  height: 30px;
+  vertical-align: middle;
+  font-size: 17px;
+  margin-top: 65px;
+  color: black;
+  text-align: center; }
+
+/* Vista Mobile */
+@media (max-width: 768px) {
   .tipos_hamburguesas {
     display: grid;
-    grid-template-areas: "cheese doblecuarto onion bacon clasica";
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-areas: "cheese" "doblecuarto" "onion" "bacon" "clasica";
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
     height: 100%;
-    width: 100%;
-  }
-
-  .tipos_hamburguesas div {
-    width: 100%;
-    height: 88vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: wheat;
-    transition: 1s;
-    opacity: 85%;
-  }
-
-  .tipos_hamburguesas div:hover {
-    transform: scale(1.01);
-    opacity: 100%;
-  }
-
-  .tipos_hamburguesas div img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    position: relative;
-  }
-
+    width: 100%; }
   .tipos_hamburguesas div h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     font-stretch: ultra-condensed;
     font-variant: small-caps;
-    margin-bottom: 400px;
+    margin-bottom: 500px;
     color: #fd8700;
     position: absolute;
     font-stretch: expanded;
     text-align: center;
-    width: 5cm;
-  }
-
-  .cheese {
-    grid-area: cheese;
-    opacity: 80%;
-  }
-
-  .doble_cuarto {
-    grid-area: doblecuarto;
-    opacity: 80%;
-  }
-
-  .onion {
-    grid-area: onion;
-    opacity: 80%;
-  }
-
-  .bacon {
-    grid-area: bacon;
-    opacity: 80%;
-  }
-
-  .clasica {
-    grid-area: clasica;
-    opacity: 80%;
-  }
-
+    width: 100%; }
+  .footer_pedidos h1 {
+    width: 300px;
+    height: 30px;
+    vertical-align: middle;
+    font-size: 14px;
+    margin-top: 65px;
+    color: black;
+    text-align: center; }
+  .logo_footer_pedidos {
+    margin-top: 22px;
+    width: 125px;
+    height: 100px;
+    padding-left: 10px;
+    border-radius: 50%; }
   .tipos_hamburguesas div button {
     text-align: center;
     border-radius: 25px;
@@ -303,495 +324,326 @@
     color: #ffffff;
     width: 6cm;
     margin-top: 500px;
-    position: absolute;
-  }
+    position: absolute; } }
 
-  .tipos_hamburguesas div button:hover {
-    background-color: #fd8700;
-    color: #ffffff;
-    transform: scale(1.1);
-  }
+/* Contacto */
+.body_contacto {
+  display: flex;
+  flex-direction: column; }
 
-  button p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    font-stretch: expanded;
-    font-variant: small-caps;
-  }
+.contactos {
+  color: #fd8700; }
 
-  .footer_pedidos {
-    background-image: linear-gradient(90deg, #fd8700, #ffd71d);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    bottom: 0;
-    width: 100%;
-    height: 150px;
-    border-top-color: #ffffff;
-  }
+.logo {
+  width: 150px;
+  height: 100px;
+  float: left;
+  padding: 0px;
+  animation-duration: 3s;
+  animation-name: aparecer;
+  animation-iteration-count: 1; }
 
-  .logo_footer_pedidos {
-    margin-top: 22px;
-    width: 125px;
-    height: 100px;
-    padding: 0px;
-    border-radius: 50%;
-  }
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
-  .footer_pedidos h1 {
-    width: 300px;
-    height: 30px;
-    vertical-align: middle;
-    font-size: 17px;
-    margin-top: 65px;
-    color: black;
-    text-align: center;
-  }
+.contacto {
+  background-image: url("../Assets/Images/contacto.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 650px;
+  animation-name: efecto_contacto;
+  animation-duration: 1s;
+  animation-iteration-count: 1; }
 
-  /* Vista Mobile */
+@keyframes efecto_contacto {
+  0% {
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
 
-  @media (max-width: 768px) {
-    .tipos_hamburguesas {
-      display: grid;
-      grid-template-areas: "cheese"
-        "doblecuarto"
-        "onion"
-        "bacon"
-        "clasica";
-      grid-template-columns: 100%;
-      grid-template-rows: 20% 20% 20% 20% 20%;
-      height: 100%;
-      width: 100%;
-    }
+.contacto div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
-    .tipos_hamburguesas div h1 {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 25px;
-      font-stretch: ultra-condensed;
-      font-variant: small-caps;
-      margin-bottom: 500px;
-      color: #fd8700;
-      position: absolute;
-      font-stretch: expanded;
-      text-align: center;
-      width: 100%;
+.mensajeria {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  animation-name: mensajeria;
+  animation-duration: 1s;
+  animation-iteration-count: 1; }
 
-    }
+@keyframes mensajeria {
+  0% {
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
 
-    .footer_pedidos h1 {
-      width: 300px;
-      height: 30px;
-      vertical-align: middle;
-      font-size: 14px;
-      margin-top: 65px;
-      color: black;
-      text-align: center;
-    }
+.nombre_apellido {
+  height: 50px;
+  width: 10cm;
+  border-radius: 15px;
+  border-color: #fd8700;
+  margin-top: 12px;
+  font-size: 18px; }
 
-    .logo_footer_pedidos {
-      margin-top: 22px;
-      width: 125px;
-      height: 100px;
-      padding-left: 10px;
-      border-radius: 50%;
-    }
+.email {
+  height: 50px;
+  width: 10cm;
+  border-radius: 15px;
+  border-color: #fd8700;
+  margin-top: 12px;
+  font-size: 18px; }
 
-    .tipos_hamburguesas div button {
-      text-align: center;
-      border-radius: 25px;
-      background-color: #26263a;
-      color: #ffffff;
-      width: 6cm;
-      margin-top: 500px;
-      position: absolute;
-    }
-  }
+.mensaje {
+  height: 3cm;
+  border-radius: 15px;
+  width: 10cm;
+  text-align: initial;
+  margin-top: 12px;
+  font-size: 18px; }
 
-  /* Contacto */
+.boton {
+  text-align: center;
+  height: 50px;
+  width: 3cm;
+  border-radius: 15px;
+  border-color: #fd8700;
+  font-size: 20px;
+  display: block;
+  margin-top: 15px;
+  background-color: #26263a;
+  color: white;
+  font: bold;
+  margin-left: 35%; }
 
-  .body_contacto {
-    display: flex;
-    flex-direction: column;
-  }
+.boton:hover {
+  background-color: #fd8700;
+  color: black; }
 
-  .contactos {
-    color: #fd8700;
-  }
+.footer_contacto {
+  background-image: linear-gradient(90deg, #fd8700, #ffd71d);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 150px;
+  border-top-color: #ffffff; }
 
-  .logo {
-    width: 150px;
-    height: 100px;
-    float: left;
-    padding: 0px;
-    animation-duration: 3s;
-    animation-name: aparecer;
-    animation-iteration-count: 1;
-  }
+.logo_footer_contacto {
+  margin-top: 22px;
+  width: 100%;
+  height: 100px;
+  padding: 0px;
+  border-radius: 50%; }
 
-  @keyframes aparecer {
-    0% {
-      opacity: 0;
-    }
+.footer_contacto h1 {
+  width: 300px;
+  height: 30px;
+  vertical-align: middle;
+  font-size: 17px;
+  margin-top: 65px;
+  color: black; }
 
-    100% {
-      opacity: 1;
-    }
-  }
+/* Sobre nosotros */
+.texto_2 {
+  background-image: url("../Assets/Images/burger.jpg");
+  background-color: #ffffff;
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
-  .contacto {
-    background-image: url("../Assets/Images/contacto.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: 650px;
-    animation-name: efecto_contacto;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-  }
+.cuadro_textos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 90%; }
 
-  @keyframes efecto_contacto {
-    0% {
-      opacity: 0%;
-    }
+.texto_izquierda {
+  width: 500px;
+  transition: 1s;
+  animation-duration: 1s;
+  animation-name: cuadro_izquierdo;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out; }
 
-    100% {
-      opacity: 100%;
-    }
-  }
+@keyframes cuadro_izquierdo {
+  0% {
+    translate: -400px; }
+  100% {
+    translate: 0px; } }
 
-  .contacto div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+.texto_izquierda:hover {
+  transform: scale(1.2); }
 
-  .mensajeria {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    animation-name: mensajeria;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-  }
+.texto_derecha {
+  width: 500px;
+  transition: 1s;
+  animation-duration: 1s;
+  animation-name: cuadro_derecho;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out; }
 
-  @keyframes mensajeria {
-    0% {
-      opacity: 0%;
-    }
+@keyframes cuadro_derecho {
+  0% {
+    translate: 400px; }
+  100% {
+    translate: 0px; } }
 
-    100% {
-      opacity: 100%;
-    }
-  }
+.texto_derecha:hover {
+  transform: scale(1.2); }
 
-  .nombre_apellido {
-    height: 50px;
-    width: 10cm;
-    border-radius: 15px;
-    border-color: #fd8700;
-    margin-top: 12px;
-    font-size: 18px;
-  }
+.texto_izquierda h1 {
+  border-style: double;
+  border-color: #fd8700;
+  border-radius: 24px;
+  color: white;
+  backface-visibility: hidden;
+  font-family: Arial, Helvetica, sans-serif; }
 
-  .email {
-    height: 50px;
-    width: 10cm;
-    border-radius: 15px;
-    border-color: #fd8700;
-    margin-top: 12px;
-    font-size: 18px;
-  }
+.texto_izquierda h1:hover {
+  border-color: #ffd71d; }
 
-  .mensaje {
-    height: 3cm;
-    border-radius: 15px;
-    width: 10cm;
-    text-align: initial;
-    margin-top: 12px;
-    font-size: 18px;
-  }
+.texto_derecha h1 {
+  border-style: double;
+  border-color: #fd8700;
+  border-radius: 24px;
+  color: #ffffff;
+  backface-visibility: hidden;
+  font-family: Arial, Helvetica, sans-serif; }
 
-  .boton {
-    text-align: center;
-    height: 50px;
-    width: 3cm;
-    border-radius: 15px;
-    border-color: #fd8700;
-    font-size: 20px;
-    display: block;
-    margin-top: 15px;
-    background-color: #26263a;
-    color: white;
-    font: bold;
-    margin-left: 35%;
-  }
+.texto_derecha h1:hover {
+  border-color: #ffd71d; }
 
-  .boton:hover {
-    background-color: #fd8700;
-    color: black;
-  }
+.cuadro_textos div h1 {
+  font-size: 25px; }
 
-  .footer_contacto {
-    background-image: linear-gradient(90deg, #fd8700, #ffd71d);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 150px;
-    border-top-color: #ffffff;
-  }
+.footer_sobrenosotros {
+  background-image: linear-gradient(90deg, #fd8700, #ffd71d);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 150px;
+  border-top-color: #ffffff; }
 
-  .logo_footer_contacto {
-    margin-top: 22px;
-    width: 100%;
-    height: 100px;
-    padding: 0px;
-    border-radius: 50%;
-  }
+.logo_footer_sobrenosotros {
+  margin-top: 22px;
+  width: 125px;
+  height: 100px;
+  padding: 0px;
+  border-radius: 50%; }
 
-  .footer_contacto h1 {
-    width: 300px;
-    height: 30px;
-    vertical-align: middle;
-    font-size: 17px;
-    margin-top: 65px;
-    color: black;
-  }
+.footer_sobrenosotros h1 {
+  width: 300px;
+  height: 30px;
+  vertical-align: middle;
+  font-size: 17px;
+  margin-top: 65px;
+  color: black; }
 
-  /* Sobre nosotros */
+.sobre_nosotros {
+  color: #fd8700; }
 
-  .texto_2 {
-    background-image: url("../Assets/Images/burger.jpg");
-    background-color: #ffffff;
-    height: 100vh;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
+/* Vista mobile */
+@media (max-width: 768px) {
   .cuadro_textos {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 90%;
-  }
-
-  .texto_izquierda {
-    width: 500px;
-    transition: 1s;
-    animation-duration: 1s;
-    animation-name: cuadro_izquierdo;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in-out;
-  }
-
-  @keyframes cuadro_izquierdo {
-    0% {
-      translate: -400px;
-    }
-
-    100% {
-      translate: 0px;
-    }
-  }
-
-  .texto_izquierda:hover {
-    transform: scale(1.2);
-  }
-
-  .texto_derecha {
-    width: 500px;
-    transition: 1s;
-    animation-duration: 1s;
-    animation-name: cuadro_derecho;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in-out;
-  }
-
-  @keyframes cuadro_derecho {
-    0% {
-      translate: 400px;
-    }
-
-    100% {
-      translate: 0px;
-    }
-  }
-
-  .texto_derecha:hover {
-    transform: scale(1.2);
-  }
-
-  .texto_izquierda h1 {
-    border-style: double;
-    border-color: #fd8700;
-    border-radius: 24px;
-    color: rgb(255, 255, 255);
-    backface-visibility: hidden;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .texto_izquierda h1:hover {
-    border-color: #ffd71d;
-  }
-
-  .texto_derecha h1 {
-    border-style: double;
-    border-color: #fd8700;
-    border-radius: 24px;
-    color: #ffffff;
-    backface-visibility: hidden;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .texto_derecha h1:hover {
-    border-color: #ffd71d;
-  }
-
-  .cuadro_textos div h1 {
-    font-size: 25px;
-  }
-
-  .footer_sobrenosotros {
-    background-image: linear-gradient(90deg, #fd8700, #ffd71d);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 150px;
-    border-top-color: #ffffff;
-  }
-
-  .logo_footer_sobrenosotros {
-    margin-top: 22px;
-    width: 125px;
-    height: 100px;
-    padding: 0px;
-    border-radius: 50%;
-  }
-
-  .footer_sobrenosotros h1 {
-    width: 300px;
-    height: 30px;
-    vertical-align: middle;
-    font-size: 17px;
-    margin-top: 65px;
-    color: black;
-  }
-
-  .sobre_nosotros {
-    color: #fd8700;
-  }
-
-  /* Vista mobile */
-
-  @media (max-width: 768px) {
-    .cuadro_textos {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-      height: 100%;
-     }
-    
-    .cuadro_textos div h1 {
-      font-size: 20px;
-    }
-    .texto_2 .cuadro_textos div {
-      width: 90%;
-    }
-  }
-
-  /* Ingresar */
-  .panel_ingresar {
-    background-image: url("../Assets/Images/hamburguesa.jpg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
     flex-direction: column;
-    height: 650px;
-  }
-
-  .ingresar {
-    color: #fd8700
-  }
-
-  .formulario {
-    margin-top: 70px;
-    margin-bottom: 0px;
-  }
-
-  .panel_ingresar .formulario_ingresar {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-  }
+    height: 100%; }
+  .cuadro_textos div h1 {
+    font-size: 20px; }
+  .texto_2 .cuadro_textos div {
+    width: 90%; } }
 
-  .usuario_contraseña {
-    width: 8cm;
-    height: 1cm;
-    border-radius: 12px;
-    border-color: #fd8700;
-    font-size: 15px;
-  }
+/* Ingresar */
+.panel_ingresar {
+  background-image: url("../Assets/Images/hamburguesa.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 650px; }
 
-  .botones {
-    text-align: center;
-    width: 4cm;
-    border-radius: 8px;
-    border-color: #fd8700;
-    display: block;
-    margin-top: 15px;
-    background-color: #26263a;
-    color: white;
-    font: bold;
-    font-size: 20px;
-  }
+.ingresar {
+  color: #fd8700; }
 
-  .botones:hover {
-    background-color: #fd8700;
-    color: black;
-  }
+.formulario {
+  margin-top: 70px;
+  margin-bottom: 0px; }
 
-  .footer_ingresar {
-    background-image: linear-gradient(90deg, #fd8700, #ffd71d);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    bottom: 0;
-    width: 100%;
-    height: 150px;
-    border-top-color: #ffffff;
-  }
+.panel_ingresar .formulario_ingresar {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
-  .logo_footer_ingresar {
-    margin-top: 22px;
-    width: 125px;
-    height: 100px;
-    padding: 0px;
-    border-radius: 50%;
-  }
+.usuario_contraseña {
+  width: 8cm;
+  height: 1cm;
+  border-radius: 12px;
+  border-color: #fd8700;
+  font-size: 15px; }
 
-  .footer_ingresar h1 {
-    width: 300px;
-    height: 30px;
-    vertical-align: middle;
-    font-size: 17px;
-    margin-top: 65px;
-    color: black;
-  }
+.botones {
+  text-align: center;
+  width: 4cm;
+  border-radius: 8px;
+  border-color: #fd8700;
+  display: block;
+  margin-top: 15px;
+  background-color: #26263a;
+  color: white;
+  font: bold;
+  font-size: 20px; }
+
+.botones:hover {
+  background-color: #fd8700;
+  color: black; }
+
+.footer_ingresar {
+  background-image: linear-gradient(90deg, #fd8700, #ffd71d);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  border-top-color: #ffffff; }
+
+.logo_footer_ingresar {
+  margin-top: 22px;
+  width: 125px;
+  height: 100px;
+  padding: 0px;
+  border-radius: 50%; }
+
+.footer_ingresar h1 {
+  width: 300px;
+  height: 30px;
+  vertical-align: middle;
+  font-size: 17px;
+  margin-top: 65px;
+  color: black; }
