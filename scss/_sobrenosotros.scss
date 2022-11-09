@@ -30,6 +30,9 @@
         animation-name: cuadro_izquierdo;
         animation-iteration-count: 1;
         animation-timing-function: ease-in-out;
+        background-color: $color-secundario;
+        opacity: 70%;
+        border-radius: 25px;
     }
 
     @keyframes cuadro_izquierdo {
@@ -44,6 +47,7 @@
 
     .texto_izquierda:hover {
         transform: scale(1.2);
+        opacity: 100%;
     }
 
     .texto_derecha {
@@ -53,6 +57,9 @@
         animation-name: cuadro_derecho;
         animation-iteration-count: 1;
         animation-timing-function: ease-in-out;
+        opacity: 70%;
+        border-radius: 24px;
+        background-color: $color-secundario;
     }
 
     @keyframes cuadro_derecho {
@@ -67,15 +74,18 @@
 
     .texto_derecha:hover {
         transform: scale(1.2);
+        opacity: 100%;
     }
 
     .texto_izquierda h1 {
         border-style: double;
         border-color: $color-primario;
         border-radius: 24px;
-        color: white;
+        color: rgb(0, 0, 0);
         backface-visibility: hidden;
         font-family: Arial, Helvetica, sans-serif;
+        opacity: 100%;
+        text-align: center;
     }
 
     .texto_izquierda h1:hover {
@@ -86,9 +96,11 @@
         border-style: double;
         border-color: $color-primario;
         border-radius: 24px;
-        color: #ffffff;
+        color: #000000;
         backface-visibility: hidden;
         font-family: Arial, Helvetica, sans-serif;
+        opacity: 100%;
+        text-align: center;
     }
 
     .texto_derecha h1:hover {

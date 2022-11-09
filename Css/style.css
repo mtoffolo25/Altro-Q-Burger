@@ -357,7 +357,10 @@ button p {
   animation-duration: 1s;
   animation-name: cuadro_izquierdo;
   animation-iteration-count: 1;
-  animation-timing-function: ease-in-out; }
+  animation-timing-function: ease-in-out;
+  background-color: #ffd71d;
+  opacity: 70%;
+  border-radius: 25px; }
 
 @keyframes cuadro_izquierdo {
   0% {
@@ -366,7 +369,8 @@ button p {
     translate: 0px; } }
 
 .texto_izquierda:hover {
-  transform: scale(1.2); }
+  transform: scale(1.2);
+  opacity: 100%; }
 
 .texto_derecha {
   width: 500px;
@@ -374,7 +378,10 @@ button p {
   animation-duration: 1s;
   animation-name: cuadro_derecho;
   animation-iteration-count: 1;
-  animation-timing-function: ease-in-out; }
+  animation-timing-function: ease-in-out;
+  opacity: 70%;
+  border-radius: 24px;
+  background-color: #ffd71d; }
 
 @keyframes cuadro_derecho {
   0% {
@@ -383,15 +390,18 @@ button p {
     translate: 0px; } }
 
 .texto_derecha:hover {
-  transform: scale(1.2); }
+  transform: scale(1.2);
+  opacity: 100%; }
 
 .texto_izquierda h1 {
   border-style: double;
   border-color: #fd8700;
   border-radius: 24px;
-  color: white;
+  color: black;
   backface-visibility: hidden;
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 100%;
+  text-align: center; }
 
 .texto_izquierda h1:hover {
   border-color: #ffd71d; }
@@ -400,9 +410,11 @@ button p {
   border-style: double;
   border-color: #fd8700;
   border-radius: 24px;
-  color: #ffffff;
+  color: #000000;
   backface-visibility: hidden;
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 100%;
+  text-align: center; }
 
 .texto_derecha h1:hover {
   border-color: #ffd71d; }
