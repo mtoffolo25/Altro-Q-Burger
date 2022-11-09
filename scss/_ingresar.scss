@@ -1,17 +1,18 @@
-.panel_ingresar {
+    @import "variables";
+
+    .panel_ingresar {
     background-image: url("../Assets/Images/hamburguesa.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 650px; }
+    height: 100vh; }
   
   .ingresar {
     color: $color-primario; }
   
   .formulario {
-    margin-top: 70px;
     margin-bottom: 0px; }
   
   .panel_ingresar .formulario_ingresar {
@@ -65,6 +66,24 @@
     width: 300px;
     height: 30px;
     vertical-align: middle;
-    font-size: 17px;
+    font-size: $fuente-footer;
     margin-top: 65px;
     color: black; }
+
+     /* Vista mobile */
+  @media (max-width: 768px) {
+    .footer_ingresar h1 {
+        width: 300px;
+        height: 30px;
+        vertical-align: middle;
+        font-size: $fuente-footer-mobile;
+        margin-top: 65px;
+        color: black;
+        text-align: center; }
+        .logo_footer_ingresar {
+        margin-top: 22px;
+        width: 125px;
+        height: 100px;
+        padding-left: $padding-logo-footer;
+        border-radius: 50%; }
+  }

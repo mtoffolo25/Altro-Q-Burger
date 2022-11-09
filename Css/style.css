@@ -11,7 +11,7 @@
 
 .tipos_hamburguesas div {
   width: 100%;
-  height: 88vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -183,7 +183,7 @@ button p {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 650px;
+  height: 100vh;
   animation-name: efecto_contacto;
   animation-duration: 1s;
   animation-iteration-count: 1; }
@@ -280,6 +280,57 @@ button p {
   font-size: 17px;
   margin-top: 65px;
   color: black; }
+
+/* Vista Mobile */
+@media (max-width: 768px) {
+  .footer_contacto h1 {
+    width: 300px;
+    height: 30px;
+    vertical-align: middle;
+    font-size: 14px;
+    margin-top: 65px;
+    color: black;
+    text-align: center; }
+  .logo_footer_contacto {
+    margin-top: 22px;
+    width: 100%;
+    height: 100px;
+    padding-left: 10px;
+    border-radius: 50%; }
+  .nombre_apellido {
+    height: 30px;
+    width: 7cm;
+    border-radius: 15px;
+    border-color: #fd8700;
+    margin-top: 12px;
+    font-size: 13px; }
+  .email {
+    height: 30px;
+    width: 7cm;
+    border-radius: 15px;
+    border-color: #fd8700;
+    margin-top: 12px;
+    font-size: 13px; }
+  .mensaje {
+    height: 30px;
+    border-radius: 15px;
+    width: 7cm;
+    text-align: initial;
+    margin-top: 12px;
+    font-size: 13px; }
+  .boton {
+    text-align: center;
+    height: 35px;
+    width: 3cm;
+    border-radius: 15px;
+    border-color: #fd8700;
+    font-size: 15px;
+    display: block;
+    margin-top: 15px;
+    background-color: #26263a;
+    color: white;
+    font: bold;
+    margin-left: 30%; } }
 
 .texto_2 {
   background-image: url("../Assets/Images/burger.jpg");
@@ -397,7 +448,21 @@ button p {
   .cuadro_textos div h1 {
     font-size: 20px; }
   .texto_2 .cuadro_textos div {
-    width: 90%; } }
+    width: 90%; }
+  .footer_sobrenosotros h1 {
+    width: 300px;
+    height: 30px;
+    vertical-align: middle;
+    font-size: 14px;
+    margin-top: 65px;
+    color: black;
+    text-align: center; }
+  .logo_footer_sobrenosotros {
+    margin-top: 22px;
+    width: 125px;
+    height: 100px;
+    padding-left: 10px;
+    border-radius: 50%; } }
 
 .panel_ingresar {
   background-image: url("../Assets/Images/hamburguesa.jpg");
@@ -406,13 +471,12 @@ button p {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 650px; }
+  height: 100vh; }
 
 .ingresar {
   color: #fd8700; }
 
 .formulario {
-  margin-top: 70px;
   margin-bottom: 0px; }
 
 .panel_ingresar .formulario_ingresar {
@@ -469,6 +533,23 @@ button p {
   font-size: 17px;
   margin-top: 65px;
   color: black; }
+
+/* Vista mobile */
+@media (max-width: 768px) {
+  .footer_ingresar h1 {
+    width: 300px;
+    height: 30px;
+    vertical-align: middle;
+    font-size: 14px;
+    margin-top: 65px;
+    color: black;
+    text-align: center; }
+  .logo_footer_ingresar {
+    margin-top: 22px;
+    width: 125px;
+    height: 100px;
+    padding-left: 10px;
+    border-radius: 50%; } }
 
 * {
   padding: 0;
@@ -640,6 +721,13 @@ nav ul li a:hover {
     width: 300px;
     height: 30px;
     text-align: center;
-    font-size: 10px;
+    font-size: 14px;
     margin-top: 65px;
-    color: black; } }
+    color: black; }
+  .logo_footer {
+    margin-top: 22px;
+    width: 125px;
+    height: 100px;
+    padding: 0px;
+    border-radius: 50%;
+    padding-left: 10px; } }

@@ -1,3 +1,5 @@
+    @import "variables";
+
     .pedidos {
     color: $color-primario; }
   
@@ -10,7 +12,7 @@
   
   .tipos_hamburguesas div {
     width: 100%;
-    height: 88vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -102,7 +104,7 @@
     width: 300px;
     height: 30px;
     vertical-align: middle;
-    font-size: 17px;
+    font-size: $fuente-footer;
     margin-top: 65px;
     color: black;
     text-align: center; }
@@ -135,7 +137,7 @@
       width: 300px;
       height: 30px;
       vertical-align: middle;
-      font-size: 14px;
+      font-size: $fuente-footer-mobile;
       margin-top: 65px;
       color: black;
       text-align: center; }
@@ -143,7 +145,7 @@
       margin-top: 22px;
       width: 125px;
       height: 100px;
-      padding-left: 10px;
+      padding-left: $padding-logo-footer;
       border-radius: 50%; }
     .tipos_hamburguesas div button {
       text-align: center;

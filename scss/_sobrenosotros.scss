@@ -1,4 +1,6 @@
-.texto_2 {
+    @import "variables";
+
+    .texto_2 {
     background-image: url("../Assets/Images/burger.jpg");
     background-color: #ffffff;
     height: 100vh;
@@ -96,7 +98,7 @@
     width: 300px;
     height: 30px;
     vertical-align: middle;
-    font-size: 17px;
+    font-size: $fuente-footer;
     margin-top: 65px;
     color: black; }
   
@@ -114,4 +116,19 @@
     .cuadro_textos div h1 {
       font-size: 20px; }
     .texto_2 .cuadro_textos div {
-      width: 90%; } }
+      width: 90%; } 
+    .footer_sobrenosotros h1 {
+        width: 300px;
+        height: 30px;
+        vertical-align: middle;
+        font-size: $fuente-footer-mobile;
+        margin-top: 65px;
+        color: black;
+        text-align: center; }
+    .logo_footer_sobrenosotros {
+        margin-top: 22px;
+         width: 125px;
+        height: 100px;
+        padding-left: $padding-logo-footer;
+        border-radius: 50%; }
+    }
