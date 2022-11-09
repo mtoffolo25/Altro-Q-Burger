@@ -1,0 +1,19 @@
+{
+  "name": "preentrega2toffolo",
+  "version": "1.0.0",
+  "description": "Proyecto Desarrollo Web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mtoffolo25/PreEntrega2-Toffolo.git"
+  },
+  "author": "Maxi Toffolo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mtoffolo25/PreEntrega2-Toffolo/issues"
+  },
+  "homepage": "https://github.com/mtoffolo25/PreEntrega2-Toffolo#readme"
+}
