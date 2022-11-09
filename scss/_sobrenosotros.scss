@@ -53,31 +53,31 @@
   
   .texto_izquierda h1 {
     border-style: double;
-    border-color: #fd8700;
+    border-color: $color-primario;
     border-radius: 24px;
     color: white;
     backface-visibility: hidden;
     font-family: Arial, Helvetica, sans-serif; }
   
   .texto_izquierda h1:hover {
-    border-color: #ffd71d; }
+    border-color: $color-secundario; }
   
   .texto_derecha h1 {
     border-style: double;
-    border-color: #fd8700;
+    border-color: $color-primario;
     border-radius: 24px;
     color: #ffffff;
     backface-visibility: hidden;
     font-family: Arial, Helvetica, sans-serif; }
   
   .texto_derecha h1:hover {
-    border-color: #ffd71d; }
+    border-color: $color-secundario; }
   
   .cuadro_textos div h1 {
     font-size: 25px; }
   
   .footer_sobrenosotros {
-    background-image: linear-gradient(90deg, #fd8700, #ffd71d);
+    background-image: linear-gradient(90deg, $color-primario, $color-secundario);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -101,7 +101,7 @@
     color: black; }
   
   .sobre_nosotros {
-    color: #fd8700; }
+    color: $color-primario; }
   
   /* Vista mobile */
   @media (max-width: 768px) {

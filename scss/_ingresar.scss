@@ -8,7 +8,7 @@
     height: 650px; }
   
   .ingresar {
-    color: #fd8700; }
+    color: $color-primario; }
   
   .formulario {
     margin-top: 70px;
@@ -25,14 +25,14 @@
     width: 8cm;
     height: 1cm;
     border-radius: 12px;
-    border-color: #fd8700;
+    border-color: $color-primario;
     font-size: 15px; }
   
   .botones {
     text-align: center;
     width: 4cm;
     border-radius: 8px;
-    border-color: #fd8700;
+    border-color: $color-primario;
     display: block;
     margin-top: 15px;
     background-color: #26263a;
@@ -41,11 +41,11 @@
     font-size: 20px; }
   
   .botones:hover {
-    background-color: #fd8700;
+    background-color: $color-primario;
     color: black; }
   
   .footer_ingresar {
-    background-image: linear-gradient(90deg, #fd8700, #ffd71d);
+    background-image: linear-gradient(90deg, $color-primario, $color-secundario);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;

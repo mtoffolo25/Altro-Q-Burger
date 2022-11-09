@@ -1,3 +1,9 @@
+@import "variables";
+@import "pedidos";
+@import "contacto";
+@import "sobrenosotros";
+@import "ingresar";
+
 * {
     padding: 0;
     margin: 0; }
@@ -44,10 +50,10 @@
     transition: 0.5s; }
   
   nav ul li a:hover {
-    color: #fd8700; }
+    color: $color-primario; }
   
   .inicio {
-    color: #fd8700; }
+    color: $color-primario; }
   
   .imagen_fondo {
     display: block;
@@ -70,7 +76,7 @@
       opacity: 100%; } }
   
   .footer_index {
-    background-image: linear-gradient(90deg, #fd8700, #ffd71d);
+    background-image: linear-gradient(90deg, $color-primario, $color-secundario);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -144,7 +150,7 @@
       100% {
         opacity: 100%; } }
     .footer_index {
-      background-image: linear-gradient(90deg, #fd8700, #ffd71d);
+      background-image: linear-gradient(90deg, $color-primario, $color-secundario);
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;

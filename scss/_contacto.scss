@@ -3,7 +3,7 @@
     flex-direction: column; }
   
   .contactos {
-    color: #fd8700; }
+    color: $color-primario; }
   
   .logo {
     width: 150px;
@@ -66,7 +66,7 @@
     height: 50px;
     width: 10cm;
     border-radius: 15px;
-    border-color: #fd8700;
+    border-color: $color-primario;
     margin-top: 12px;
     font-size: 18px; }
   
@@ -74,7 +74,7 @@
     height: 50px;
     width: 10cm;
     border-radius: 15px;
-    border-color: #fd8700;
+    border-color: $color-primario;
     margin-top: 12px;
     font-size: 18px; }
   
@@ -91,7 +91,7 @@
     height: 50px;
     width: 3cm;
     border-radius: 15px;
-    border-color: #fd8700;
+    border-color: $color-primario;
     font-size: 20px;
     display: block;
     margin-top: 15px;
@@ -101,11 +101,11 @@
     margin-left: 35%; }
   
   .boton:hover {
-    background-color: #fd8700;
+    background-color: $color-primario;
     color: black; }
   
   .footer_contacto {
-    background-image: linear-gradient(90deg, #fd8700, #ffd71d);
+    background-image: linear-gradient(90deg, $color-primario, $color-secundario);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;

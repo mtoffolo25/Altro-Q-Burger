@@ -1,5 +1,5 @@
     .pedidos {
-    color: #fd8700; }
+    color: $color-primario; }
   
   .tipos_hamburguesas {
     display: grid;
@@ -35,7 +35,7 @@
     font-stretch: ultra-condensed;
     font-variant: small-caps;
     margin-bottom: 400px;
-    color: #fd8700;
+    color: $color-primario;
     position: absolute;
     font-stretch: expanded;
     text-align: center;
@@ -71,7 +71,7 @@
     position: absolute; }
   
   .tipos_hamburguesas div button:hover {
-    background-color: #fd8700;
+    background-color: $color-primario;
     color: #ffffff;
     transform: scale(1.1); }
   
@@ -82,7 +82,7 @@
     font-variant: small-caps; }
   
   .footer_pedidos {
-    background-image: linear-gradient(90deg, #fd8700, #ffd71d);
+    background-image: linear-gradient(90deg, $color-primario, $color-secundario);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -126,7 +126,7 @@
       font-stretch: ultra-condensed;
       font-variant: small-caps;
       margin-bottom: 500px;
-      color: #fd8700;
+      color: $color-primario;
       position: absolute;
       font-stretch: expanded;
       text-align: center;
