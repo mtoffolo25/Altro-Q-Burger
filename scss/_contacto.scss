@@ -1,0 +1,131 @@
+.body_contacto {
+    display: flex;
+    flex-direction: column; }
+  
+  .contactos {
+    color: #fd8700; }
+  
+  .logo {
+    width: 150px;
+    height: 100px;
+    float: left;
+    padding: 0px;
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: 1; }
+  
+  @keyframes aparecer {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  
+  .contacto {
+    background-image: url("../Assets/Images/contacto.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 650px;
+    animation-name: efecto_contacto;
+    animation-duration: 1s;
+    animation-iteration-count: 1; }
+  
+  @keyframes efecto_contacto {
+    0% {
+      opacity: 0%; }
+    100% {
+      opacity: 100%; } }
+  
+  .contacto div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  
+  .mensajeria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    animation-name: mensajeria;
+    animation-duration: 1s;
+    animation-iteration-count: 1; }
+  
+  @keyframes mensajeria {
+    0% {
+      opacity: 0%; }
+    100% {
+      opacity: 100%; } }
+  
+  .nombre_apellido {
+    height: 50px;
+    width: 10cm;
+    border-radius: 15px;
+    border-color: #fd8700;
+    margin-top: 12px;
+    font-size: 18px; }
+  
+  .email {
+    height: 50px;
+    width: 10cm;
+    border-radius: 15px;
+    border-color: #fd8700;
+    margin-top: 12px;
+    font-size: 18px; }
+  
+  .mensaje {
+    height: 3cm;
+    border-radius: 15px;
+    width: 10cm;
+    text-align: initial;
+    margin-top: 12px;
+    font-size: 18px; }
+  
+  .boton {
+    text-align: center;
+    height: 50px;
+    width: 3cm;
+    border-radius: 15px;
+    border-color: #fd8700;
+    font-size: 20px;
+    display: block;
+    margin-top: 15px;
+    background-color: #26263a;
+    color: white;
+    font: bold;
+    margin-left: 35%; }
+  
+  .boton:hover {
+    background-color: #fd8700;
+    color: black; }
+  
+  .footer_contacto {
+    background-image: linear-gradient(90deg, #fd8700, #ffd71d);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 150px;
+    border-top-color: #ffffff; }
+  
+  .logo_footer_contacto {
+    margin-top: 22px;
+    width: 100%;
+    height: 100px;
+    padding: 0px;
+    border-radius: 50%; }
+  
+  .footer_contacto h1 {
+    width: 300px;
+    height: 30px;
+    vertical-align: middle;
+    font-size: 17px;
+    margin-top: 65px;
+    color: black; }
+  
+  
