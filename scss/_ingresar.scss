@@ -1,89 +1,102 @@
     @import "variables";
 
     .panel_ingresar {
-    background-image: url("../Assets/Images/hamburguesa.jpg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh; }
-  
-  .ingresar {
-    color: $color-primario; }
-  
-  .formulario {
-    margin-bottom: 0px; }
-  
-  .panel_ingresar .formulario_ingresar {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  
-  .usuario_contraseña {
-    width: 8cm;
-    height: 1cm;
-    border-radius: 12px;
-    border-color: $color-primario;
-    font-size: 15px; }
-  
-  .botones {
-    text-align: center;
-    width: 4cm;
-    border-radius: 8px;
-    border-color: $color-primario;
-    display: block;
-    margin-top: 15px;
-    background-color: #26263a;
-    color: white;
-    font: bold;
-    font-size: 20px; }
-  
-  .botones:hover {
-    background-color: $color-primario;
-    color: black; }
-  
-  .footer_ingresar {
-    background-image: linear-gradient(90deg, $color-primario, $color-secundario);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    bottom: 0;
-    width: 100%;
-    height: 150px;
-    border-top-color: #ffffff; }
-  
-  .logo_footer_ingresar {
-    margin-top: 22px;
-    width: 125px;
-    height: 100px;
-    padding: 0px;
-    border-radius: 50%; }
-  
-  .footer_ingresar h1 {
-    width: 300px;
-    height: 30px;
-    vertical-align: middle;
-    font-size: $fuente-footer;
-    margin-top: 65px;
-    color: black; }
+        background-image: url("../Assets/Images/hamburguesa.jpg");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+    }
 
-     /* Vista mobile */
-  @media (max-width: 768px) {
+    .ingresar {
+        color: $color-primario;
+    }
+
+    .formulario {
+        margin-bottom: 0px;
+    }
+
+    .panel_ingresar .formulario_ingresar {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .usuario_contraseña {
+        width: 8cm;
+        height: 1cm;
+        border-radius: 12px;
+        border-color: $color-primario;
+        font-size: 15px;
+    }
+
+    .botones {
+        text-align: center;
+        width: 4cm;
+        border-radius: 8px;
+        border-color: $color-primario;
+        display: block;
+        margin-top: 15px;
+        background-color: #26263a;
+        color: white;
+        font: bold;
+        font-size: 20px;
+    }
+
+    .botones:hover {
+        background-color: $color-primario;
+        color: black;
+    }
+
+    .footer_ingresar {
+        background-image: linear-gradient(90deg, $color-primario, $color-secundario);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        bottom: 0;
+        width: 100%;
+        height: 150px;
+        border-top-color: #ffffff;
+    }
+
+    .logo_footer_ingresar {
+        margin-top: 22px;
+        width: 125px;
+        height: 100px;
+        padding: 0px;
+        border-radius: 50%;
+    }
+
     .footer_ingresar h1 {
         width: 300px;
         height: 30px;
         vertical-align: middle;
-        font-size: $fuente-footer-mobile;
+        font-size: $fuente-footer;
         margin-top: 65px;
         color: black;
-        text-align: center; }
+    }
+
+    /* Vista mobile */
+    @media (max-width: 768px) {
+        .footer_ingresar h1 {
+            width: 300px;
+            height: 30px;
+            vertical-align: middle;
+            font-size: $fuente-footer-mobile;
+            margin-top: 65px;
+            color: black;
+            text-align: center;
+        }
+
         .logo_footer_ingresar {
-        margin-top: 22px;
-        width: 125px;
-        height: 100px;
-        padding-left: $padding-logo-footer;
-        border-radius: 50%; }
-  }
+            margin-top: 22px;
+            width: 125px;
+            height: 100px;
+            padding-left: $padding-logo-footer;
+            border-radius: 50%;
+        }
+    }

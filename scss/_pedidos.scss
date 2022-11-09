@@ -1,158 +1,184 @@
     @import "variables";
 
     .pedidos {
-    color: $color-primario; }
-  
-  .tipos_hamburguesas {
-    display: grid;
-    grid-template-areas: "cheese doblecuarto onion bacon clasica";
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    height: 100%;
-    width: 100%; }
-  
-  .tipos_hamburguesas div {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: wheat;
-    transition: 1s;
-    opacity: 85%; }
-  
-  .tipos_hamburguesas div:hover {
-    transform: scale(1.01);
-    opacity: 100%; }
-  
-  .tipos_hamburguesas div img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    position: relative; }
-  
-  .tipos_hamburguesas div h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    font-stretch: ultra-condensed;
-    font-variant: small-caps;
-    margin-bottom: 400px;
-    color: $color-primario;
-    position: absolute;
-    font-stretch: expanded;
-    text-align: center;
-    width: 5cm; }
-  
-  .cheese {
-    grid-area: cheese;
-    opacity: 80%; }
-  
-  .doble_cuarto {
-    grid-area: doblecuarto;
-    opacity: 80%; }
-  
-  .onion {
-    grid-area: onion;
-    opacity: 80%; }
-  
-  .bacon {
-    grid-area: bacon;
-    opacity: 80%; }
-  
-  .clasica {
-    grid-area: clasica;
-    opacity: 80%; }
-  
-  .tipos_hamburguesas div button {
-    text-align: center;
-    border-radius: 25px;
-    background-color: #26263a;
-    color: #ffffff;
-    width: 6cm;
-    margin-top: 500px;
-    position: absolute; }
-  
-  .tipos_hamburguesas div button:hover {
-    background-color: $color-primario;
-    color: #ffffff;
-    transform: scale(1.1); }
-  
-  button p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    font-stretch: expanded;
-    font-variant: small-caps; }
-  
-  .footer_pedidos {
-    background-image: linear-gradient(90deg, $color-primario, $color-secundario);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    bottom: 0;
-    width: 100%;
-    height: 150px;
-    border-top-color: #ffffff; }
-  
-  .logo_footer_pedidos {
-    margin-top: 22px;
-    width: 125px;
-    height: 100px;
-    padding: 0px;
-    border-radius: 50%; }
-  
-  .footer_pedidos h1 {
-    width: 300px;
-    height: 30px;
-    vertical-align: middle;
-    font-size: $fuente-footer;
-    margin-top: 65px;
-    color: black;
-    text-align: center; }
-  
-  /* Vista Mobile */
-  @media (max-width: 768px) {
-    .tipos_hamburguesas {
-      display: grid;
-      grid-template-areas: "cheese"
-   "doblecuarto"
-   "onion"
-   "bacon"
-   "clasica";
-      grid-template-columns: 100%;
-      grid-template-rows: 20% 20% 20% 20% 20%;
-      height: 100%;
-      width: 100%; }
-    .tipos_hamburguesas div h1 {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 25px;
-      font-stretch: ultra-condensed;
-      font-variant: small-caps;
-      margin-bottom: 500px;
-      color: $color-primario;
-      position: absolute;
-      font-stretch: expanded;
-      text-align: center;
-      width: 100%; }
-    .footer_pedidos h1 {
-      width: 300px;
-      height: 30px;
-      vertical-align: middle;
-      font-size: $fuente-footer-mobile;
-      margin-top: 65px;
-      color: black;
-      text-align: center; }
-    .logo_footer_pedidos {
-      margin-top: 22px;
-      width: 125px;
-      height: 100px;
-      padding-left: $padding-logo-footer;
-      border-radius: 50%; }
-    .tipos_hamburguesas div button {
-      text-align: center;
-      border-radius: 25px;
-      background-color: #26263a;
-      color: #ffffff;
-      width: 6cm;
-      margin-top: 500px;
-      position: absolute; } }
+        color: $color-primario;
+    }
 
+    .tipos_hamburguesas {
+        display: grid;
+        grid-template-areas: "cheese doblecuarto onion bacon clasica";
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        height: 100%;
+        width: 100%;
+    }
+
+    .tipos_hamburguesas div {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: wheat;
+        transition: 1s;
+        opacity: 85%;
+    }
+
+    .tipos_hamburguesas div:hover {
+        transform: scale(1.01);
+        opacity: 100%;
+    }
+
+    .tipos_hamburguesas div img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+    }
+
+    .tipos_hamburguesas div h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        font-stretch: ultra-condensed;
+        font-variant: small-caps;
+        margin-bottom: 400px;
+        color: $color-primario;
+        position: absolute;
+        font-stretch: expanded;
+        text-align: center;
+        width: 5cm;
+    }
+
+    .cheese {
+        grid-area: cheese;
+        opacity: 80%;
+    }
+
+    .doble_cuarto {
+        grid-area: doblecuarto;
+        opacity: 80%;
+    }
+
+    .onion {
+        grid-area: onion;
+        opacity: 80%;
+    }
+
+    .bacon {
+        grid-area: bacon;
+        opacity: 80%;
+    }
+
+    .clasica {
+        grid-area: clasica;
+        opacity: 80%;
+    }
+
+    .tipos_hamburguesas div button {
+        text-align: center;
+        border-radius: 25px;
+        background-color: #26263a;
+        color: #ffffff;
+        width: 6cm;
+        margin-top: 500px;
+        position: absolute;
+    }
+
+    .tipos_hamburguesas div button:hover {
+        background-color: $color-primario;
+        color: #ffffff;
+        transform: scale(1.1);
+    }
+
+    button p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-stretch: expanded;
+        font-variant: small-caps;
+    }
+
+    .footer_pedidos {
+        background-image: linear-gradient(90deg, $color-primario, $color-secundario);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        bottom: 0;
+        width: 100%;
+        height: 150px;
+        border-top-color: #ffffff;
+    }
+
+    .logo_footer_pedidos {
+        margin-top: 22px;
+        width: 125px;
+        height: 100px;
+        padding: 0px;
+        border-radius: 50%;
+    }
+
+    .footer_pedidos h1 {
+        width: 300px;
+        height: 30px;
+        vertical-align: middle;
+        font-size: $fuente-footer;
+        margin-top: 65px;
+        color: black;
+        text-align: center;
+    }
+
+    /* Vista Mobile */
+    @media (max-width: 768px) {
+        .tipos_hamburguesas {
+            display: grid;
+            grid-template-areas: "cheese"
+                "doblecuarto"
+                "onion"
+                "bacon"
+                "clasica";
+            grid-template-columns: 100%;
+            grid-template-rows: 20% 20% 20% 20% 20%;
+            height: 100%;
+            width: 100%;
+        }
+
+        .tipos_hamburguesas div h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            font-stretch: ultra-condensed;
+            font-variant: small-caps;
+            margin-bottom: 500px;
+            color: $color-primario;
+            position: absolute;
+            font-stretch: expanded;
+            text-align: center;
+            width: 100%;
+        }
+
+        .footer_pedidos h1 {
+            width: 300px;
+            height: 30px;
+            vertical-align: middle;
+            font-size: $fuente-footer-mobile;
+            margin-top: 65px;
+            color: black;
+            text-align: center;
+        }
+
+        .logo_footer_pedidos {
+            margin-top: 22px;
+            width: 125px;
+            height: 100px;
+            padding-left: $padding-logo-footer;
+            border-radius: 50%;
+        }
+
+        .tipos_hamburguesas div button {
+            text-align: center;
+            border-radius: 25px;
+            background-color: #26263a;
+            color: #ffffff;
+            width: 6cm;
+            margin-top: 500px;
+            position: absolute;
+        }
+    }

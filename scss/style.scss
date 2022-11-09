@@ -6,56 +6,69 @@
 
 * {
     padding: 0;
-    margin: 0; }
-  
-  .index {
+    margin: 0;
+}
+
+.index {
     display: flex;
-    flex-direction: column; }
-  
-  .nav_inicio {
+    flex-direction: column;
+}
+
+.nav_inicio {
     background-color: #ffffff;
     display: flex;
-    justify-content: center; }
-  
-  .logo_padre {
+    justify-content: center;
+}
+
+.logo_padre {
     width: 150px;
     height: 100px;
     animation-duration: 3s;
     animation-name: aparecer;
-    animation-iteration-count: 1; }
-  
-  @keyframes aparecer {
+    animation-iteration-count: 1;
+}
+
+@keyframes aparecer {
     0% {
-      opacity: 0; }
+        opacity: 0;
+    }
+
     100% {
-      opacity: 1; } }
-  
-  .lista {
+        opacity: 1;
+    }
+}
+
+.lista {
     width: 600px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-top: 35px; }
-  
-  nav ul li {
+    padding-top: 35px;
+}
+
+nav ul li {
     list-style: none;
     padding-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%; }
-  
-  nav ul li a {
+    font-size: 100%;
+}
+
+nav ul li a {
     text-decoration: none;
     color: #26263a;
     font-weight: bold;
-    transition: 0.5s; }
-  
-  nav ul li a:hover {
-    color: $color-primario; }
-  
-  .inicio {
-    color: $color-primario; }
-  
-  .imagen_fondo {
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    color: $color-primario;
+}
+
+.inicio {
+    color: $color-primario;
+}
+
+.imagen_fondo {
     display: block;
     background-image: url("../Assets/Images/hamburguesa.jpg");
     background-color: #ffffff;
@@ -67,15 +80,20 @@
     text-align: center;
     animation-name: efecto_fondo;
     animation-duration: 2s;
-    animation-iteration-count: 1; }
-  
-  @keyframes efecto_fondo {
+    animation-iteration-count: 1;
+}
+
+@keyframes efecto_fondo {
     0% {
-      opacity: 0%; }
+        opacity: 0%;
+    }
+
     100% {
-      opacity: 100%; } }
-  
-  .footer_index {
+        opacity: 100%;
+    }
+}
+
+.footer_index {
     background-image: linear-gradient(90deg, $color-primario, $color-secundario);
     display: flex;
     flex-direction: row;
@@ -84,105 +102,134 @@
     width: 100%;
     height: 150px;
     border-top-color: #ffffff;
-    margin-top: auto; }
-  
-  .logo_footer {
+    margin-top: auto;
+}
+
+.logo_footer {
     margin-top: 22px;
     width: 125px;
     height: 100px;
     padding: 0px;
-    border-radius: 50%; }
-  
-  .footer_index h1 {
+    border-radius: 50%;
+}
+
+.footer_index h1 {
     width: 300px;
     height: 30px;
     text-align: center;
     font-size: $fuente-footer;
     margin-top: 65px;
-    color: black; }
-  
-  /* Vista mobile */
-  @media (max-width: 768px) {
+    color: black;
+}
+
+/* Vista mobile */
+@media (max-width: 768px) {
     .nav_inicio {
-      width: 100vw;
-      background-color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
+        width: 100vw;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .logo_padre {
-      display: flex;
-      flex-direction: row;
-      align-content: center;
-      height: 100px;
-      animation-duration: 3s;
-      animation-name: aparecer;
-      animation-iteration-count: 1; }
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        height: 100px;
+        animation-duration: 3s;
+        animation-name: aparecer;
+        animation-iteration-count: 1;
+    }
+
     @keyframes aparecer {
-      0% {
-        opacity: 0; }
-      100% {
-        opacity: 1; } }
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
     .lista {
-      width: 400px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      padding-top: 35px; }
+        width: 400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 35px;
+    }
+
     .imagen_fondo {
-      height: 100vh;
-      width: 100vw;
-      display: block;
-      flex-direction: column;
-      background-image: url("../Assets/Images/hamburguesa.jpg");
-      background-color: #ffffff;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      color: black;
-      text-align: center;
-      animation-name: efecto_fondo;
-      animation-duration: 2s;
-      animation-iteration-count: 1; }
+        height: 100vh;
+        width: 100vw;
+        display: block;
+        flex-direction: column;
+        background-image: url("../Assets/Images/hamburguesa.jpg");
+        background-color: #ffffff;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: black;
+        text-align: center;
+        animation-name: efecto_fondo;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+    }
+
     @keyframes efecto_fondo {
-      0% {
-        opacity: 0%; }
-      100% {
-        opacity: 100%; } }
+        0% {
+            opacity: 0%;
+        }
+
+        100% {
+            opacity: 100%;
+        }
+    }
+
     .footer_index {
-      background-image: linear-gradient(90deg, $color-primario, $color-secundario);
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      bottom: 0;
-      width: 100vw;
-      height: 150px;
-      border-top-color: #ffffff;
-      margin-top: auto; }
+        background-image: linear-gradient(90deg, $color-primario, $color-secundario);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        bottom: 0;
+        width: 100vw;
+        height: 150px;
+        border-top-color: #ffffff;
+        margin-top: auto;
+    }
+
     .lista {
-      width: 100vw;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      padding-bottom: 15px; }
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-bottom: 15px;
+    }
+
     nav ul li {
-      list-style: none;
-      padding-top: 10px;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 10px; }
+        list-style: none;
+        padding-top: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+    }
+
     .footer_index h1 {
-      width: 300px;
-      height: 30px;
-      text-align: center;
-      font-size: $fuente-footer-mobile;
-      margin-top: 65px;
-      color: black; } 
-      
+        width: 300px;
+        height: 30px;
+        text-align: center;
+        font-size: $fuente-footer-mobile;
+        margin-top: 65px;
+        color: black;
+    }
+
     .logo_footer {
         margin-top: 22px;
         width: 125px;
         height: 100px;
         padding: 0px;
         border-radius: 50%;
-        padding-left: $padding-logo-footer; }
+        padding-left: $padding-logo-footer;
     }
+}
