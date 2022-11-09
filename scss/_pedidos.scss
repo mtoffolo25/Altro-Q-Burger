@@ -1,4 +1,7 @@
-    @import "variables";
+    @mixin sizes($width, $height) {
+        height: $height;
+        width: $width;
+     }     
 
     .pedidos {
         color: $color-primario;
@@ -8,13 +11,11 @@
         display: grid;
         grid-template-areas: "cheese doblecuarto onion bacon clasica";
         grid-template-columns: 20% 20% 20% 20% 20%;
-        height: 100%;
-        width: 100%;
+        @include sizes(100%, 100%);
     }
 
     .tipos_hamburguesas div {
-        width: 100%;
-        height: 100vh;
+        @include sizes(100%, 100vh);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -30,8 +31,7 @@
     }
 
     .tipos_hamburguesas div img {
-        height: 100%;
-        width: 100%;
+        @include sizes(100%, 100%);
         object-fit: cover;
         position: relative;
     }
@@ -41,7 +41,7 @@
         font-size: 25px;
         font-stretch: ultra-condensed;
         font-variant: small-caps;
-        margin-bottom: 400px;
+        margin-bottom: 700px;
         color: $color-primario;
         position: absolute;
         font-stretch: expanded;
@@ -103,22 +103,19 @@
         flex-direction: row;
         justify-content: space-evenly;
         bottom: 0;
-        width: 100%;
-        height: 150px;
+        @include sizes(100%, 150px);
         border-top-color: #ffffff;
     }
 
     .logo_footer_pedidos {
         margin-top: 22px;
-        width: 125px;
-        height: 100px;
+        @include sizes(125px, 100px);
         padding: 0px;
         border-radius: 50%;
     }
 
     .footer_pedidos h1 {
-        width: 300px;
-        height: 30px;
+        @include sizes(300px, 30px);
         vertical-align: middle;
         font-size: $fuente-footer;
         margin-top: 65px;
@@ -137,8 +134,7 @@
                 "clasica";
             grid-template-columns: 100%;
             grid-template-rows: 20% 20% 20% 20% 20%;
-            height: 100%;
-            width: 100%;
+            @include sizes(100%, 100%);
         }
 
         .tipos_hamburguesas div h1 {
@@ -155,8 +151,7 @@
         }
 
         .footer_pedidos h1 {
-            width: 300px;
-            height: 30px;
+            @include sizes(300px, 30px);
             vertical-align: middle;
             font-size: $fuente-footer-mobile;
             margin-top: 65px;
@@ -166,8 +161,7 @@
 
         .logo_footer_pedidos {
             margin-top: 22px;
-            width: 125px;
-            height: 100px;
+            @include sizes(125px, 100px);
             padding-left: $padding-logo-footer;
             border-radius: 50%;
         }

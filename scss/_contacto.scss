@@ -1,4 +1,7 @@
-@import "variables";
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+ } 
 
 .body_contacto {
     display: flex;
@@ -10,8 +13,7 @@
 }
 
 .logo {
-    width: 150px;
-    height: 100px;
+    @include sizes(150px, 100px);
     float: left;
     padding: 0px;
     animation-duration: 3s;
@@ -38,8 +40,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
-    height: 100vh;
+    @include sizes(100%, 100vh);
     animation-name: efecto_contacto;
     animation-duration: 1s;
     animation-iteration-count: 1;
@@ -83,8 +84,7 @@
 }
 
 .nombre_apellido {
-    height: 50px;
-    width: 10cm;
+    @include sizes(10cm, 50px);
     border-radius: 15px;
     border-color: $color-primario;
     margin-top: 12px;
@@ -92,8 +92,7 @@
 }
 
 .email {
-    height: 50px;
-    width: 10cm;
+    @include sizes(10cm, 50px);
     border-radius: 15px;
     border-color: $color-primario;
     margin-top: 12px;
@@ -101,9 +100,8 @@
 }
 
 .mensaje {
-    height: 3cm;
+    @include sizes(10cm, 3cm);
     border-radius: 15px;
-    width: 10cm;
     text-align: initial;
     margin-top: 12px;
     font-size: 18px;
@@ -111,8 +109,7 @@
 
 .boton {
     text-align: center;
-    height: 50px;
-    width: 3cm;
+    @include sizes(3cm, 50px);
     border-radius: 15px;
     border-color: $color-primario;
     font-size: 20px;
@@ -134,22 +131,19 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 100%;
-    height: 150px;
+    @include sizes(100%, 150px);
     border-top-color: #ffffff;
 }
 
 .logo_footer_contacto {
     margin-top: 22px;
-    width: 100%;
-    height: 100px;
+    @include sizes(100%, 100px);
     padding: 0px;
     border-radius: 50%;
 }
 
 .footer_contacto h1 {
-    width: 300px;
-    height: 30px;
+    @include sizes(300px, 30px);
     vertical-align: middle;
     font-size: $fuente-footer;
     margin-top: 65px;
@@ -160,8 +154,7 @@
 
 @media (max-width: 768px) {
     .footer_contacto h1 {
-        width: 300px;
-        height: 30px;
+        @include sizes(300px, 30px);
         vertical-align: middle;
         font-size: $fuente-footer-mobile;
         margin-top: 65px;
@@ -171,15 +164,13 @@
 
     .logo_footer_contacto {
         margin-top: 22px;
-        width: 100%;
-        height: 100px;
+        @include sizes(100%, 100px);
         padding-left: $padding-logo-footer;
         border-radius: 50%;
     }
 
     .nombre_apellido {
-        height: 30px;
-        width: 7cm;
+        @include sizes(7cm, 30px);
         border-radius: 15px;
         border-color: $color-primario;
         margin-top: 12px;
@@ -187,8 +178,7 @@
     }
 
     .email {
-        height: 30px;
-        width: 7cm;
+        @include sizes(7cm, 30px);
         border-radius: 15px;
         border-color: $color-primario;
         margin-top: 12px;
@@ -196,9 +186,8 @@
     }
 
     .mensaje {
-        height: 30px;
+        @include sizes(7cm, 30px);
         border-radius: 15px;
-        width: 7cm;
         text-align: initial;
         margin-top: 12px;
         font-size: 13px;
@@ -206,8 +195,7 @@
 
     .boton {
         text-align: center;
-        height: 35px;
-        width: 3cm;
+        @include sizes(3cm, 35px);
         border-radius: 15px;
         border-color: $color-primario;
         font-size: 15px;

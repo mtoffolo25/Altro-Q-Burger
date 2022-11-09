@@ -10,8 +10,8 @@
   width: 100%; }
 
 .tipos_hamburguesas div {
-  width: 100%;
   height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,7 +35,7 @@
   font-size: 25px;
   font-stretch: ultra-condensed;
   font-variant: small-caps;
-  margin-bottom: 400px;
+  margin-bottom: 700px;
   color: #fd8700;
   position: absolute;
   font-stretch: expanded;
@@ -88,20 +88,20 @@ button p {
   flex-direction: row;
   justify-content: space-evenly;
   bottom: 0;
-  width: 100%;
   height: 150px;
+  width: 100%;
   border-top-color: #ffffff; }
 
 .logo_footer_pedidos {
   margin-top: 22px;
-  width: 125px;
   height: 100px;
+  width: 125px;
   padding: 0px;
   border-radius: 50%; }
 
 .footer_pedidos h1 {
-  width: 300px;
   height: 30px;
+  width: 300px;
   vertical-align: middle;
   font-size: 17px;
   margin-top: 65px;
@@ -129,8 +129,8 @@ button p {
     text-align: center;
     width: 100%; }
   .footer_pedidos h1 {
-    width: 300px;
     height: 30px;
+    width: 300px;
     vertical-align: middle;
     font-size: 14px;
     margin-top: 65px;
@@ -138,8 +138,8 @@ button p {
     text-align: center; }
   .logo_footer_pedidos {
     margin-top: 22px;
-    width: 125px;
     height: 100px;
+    width: 125px;
     padding-left: 10px;
     border-radius: 50%; }
   .tipos_hamburguesas div button {
@@ -159,8 +159,8 @@ button p {
   color: #fd8700; }
 
 .logo {
-  width: 150px;
   height: 100px;
+  width: 150px;
   float: left;
   padding: 0px;
   animation-duration: 3s;
@@ -182,8 +182,8 @@ button p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
   height: 100vh;
+  width: 100%;
   animation-name: efecto_contacto;
   animation-duration: 1s;
   animation-iteration-count: 1; }
@@ -233,8 +233,8 @@ button p {
 
 .mensaje {
   height: 3cm;
-  border-radius: 15px;
   width: 10cm;
+  border-radius: 15px;
   text-align: initial;
   margin-top: 12px;
   font-size: 18px; }
@@ -262,20 +262,20 @@ button p {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 100%;
   height: 150px;
+  width: 100%;
   border-top-color: #ffffff; }
 
 .logo_footer_contacto {
   margin-top: 22px;
-  width: 100%;
   height: 100px;
+  width: 100%;
   padding: 0px;
   border-radius: 50%; }
 
 .footer_contacto h1 {
-  width: 300px;
   height: 30px;
+  width: 300px;
   vertical-align: middle;
   font-size: 17px;
   margin-top: 65px;
@@ -284,8 +284,8 @@ button p {
 /* Vista Mobile */
 @media (max-width: 768px) {
   .footer_contacto h1 {
-    width: 300px;
     height: 30px;
+    width: 300px;
     vertical-align: middle;
     font-size: 14px;
     margin-top: 65px;
@@ -293,8 +293,8 @@ button p {
     text-align: center; }
   .logo_footer_contacto {
     margin-top: 22px;
-    width: 100%;
     height: 100px;
+    width: 100%;
     padding-left: 10px;
     border-radius: 50%; }
   .nombre_apellido {
@@ -313,8 +313,8 @@ button p {
     font-size: 13px; }
   .mensaje {
     height: 30px;
-    border-radius: 15px;
     width: 7cm;
+    border-radius: 15px;
     text-align: initial;
     margin-top: 12px;
     font-size: 13px; }
@@ -415,20 +415,20 @@ button p {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 100%;
   height: 150px;
+  width: 100%;
   border-top-color: #ffffff; }
 
 .logo_footer_sobrenosotros {
   margin-top: 22px;
-  width: 125px;
   height: 100px;
+  width: 125px;
   padding: 0px;
   border-radius: 50%; }
 
 .footer_sobrenosotros h1 {
-  width: 300px;
   height: 30px;
+  width: 300px;
   vertical-align: middle;
   font-size: 17px;
   margin-top: 65px;
@@ -450,8 +450,8 @@ button p {
   .texto_2 .cuadro_textos div {
     width: 90%; }
   .footer_sobrenosotros h1 {
-    width: 300px;
     height: 30px;
+    width: 300px;
     vertical-align: middle;
     font-size: 14px;
     margin-top: 65px;
@@ -459,8 +459,8 @@ button p {
     text-align: center; }
   .logo_footer_sobrenosotros {
     margin-top: 22px;
-    width: 125px;
     height: 100px;
+    width: 125px;
     padding-left: 10px;
     border-radius: 50%; } }
 
@@ -487,8 +487,8 @@ button p {
   align-items: center; }
 
 .usuario_contraseña {
-  width: 8cm;
   height: 1cm;
+  width: 8cm;
   border-radius: 12px;
   border-color: #fd8700;
   font-size: 15px; }
@@ -515,20 +515,20 @@ button p {
   flex-direction: row;
   justify-content: space-evenly;
   bottom: 0;
-  width: 100%;
   height: 150px;
+  width: 100%;
   border-top-color: #ffffff; }
 
 .logo_footer_ingresar {
   margin-top: 22px;
-  width: 125px;
   height: 100px;
+  width: 125px;
   padding: 0px;
   border-radius: 50%; }
 
 .footer_ingresar h1 {
-  width: 300px;
   height: 30px;
+  width: 300px;
   vertical-align: middle;
   font-size: 17px;
   margin-top: 65px;
@@ -537,8 +537,8 @@ button p {
 /* Vista mobile */
 @media (max-width: 768px) {
   .footer_ingresar h1 {
-    width: 300px;
     height: 30px;
+    width: 300px;
     vertical-align: middle;
     font-size: 14px;
     margin-top: 65px;
@@ -546,8 +546,8 @@ button p {
     text-align: center; }
   .logo_footer_ingresar {
     margin-top: 22px;
-    width: 125px;
     height: 100px;
+    width: 125px;
     padding-left: 10px;
     border-radius: 50%; } }
 
@@ -565,8 +565,8 @@ button p {
   justify-content: center; }
 
 .logo_padre {
-  width: 150px;
   height: 100px;
+  width: 150px;
   animation-duration: 3s;
   animation-name: aparecer;
   animation-iteration-count: 1; }
@@ -628,21 +628,21 @@ nav ul li a:hover {
   flex-direction: row;
   justify-content: space-evenly;
   bottom: 0;
-  width: 100%;
   height: 150px;
+  width: 100%;
   border-top-color: #ffffff;
   margin-top: auto; }
 
 .logo_footer {
   margin-top: 22px;
-  width: 125px;
   height: 100px;
+  width: 152px;
   padding: 0px;
   border-radius: 50%; }
 
 .footer_index h1 {
-  width: 300px;
   height: 30px;
+  width: 300px;
   text-align: center;
   font-size: 17px;
   margin-top: 65px;
@@ -702,8 +702,8 @@ nav ul li a:hover {
     flex-direction: row;
     justify-content: space-evenly;
     bottom: 0;
-    width: 100vw;
     height: 150px;
+    width: 100vw;
     border-top-color: #ffffff;
     margin-top: auto; }
   .lista {
@@ -718,16 +718,16 @@ nav ul li a:hover {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px; }
   .footer_index h1 {
-    width: 300px;
     height: 30px;
+    width: 300px;
     text-align: center;
     font-size: 14px;
     margin-top: 65px;
     color: black; }
   .logo_footer {
     margin-top: 22px;
-    width: 125px;
     height: 100px;
+    width: 125px;
     padding: 0px;
     border-radius: 50%;
     padding-left: 10px; } }

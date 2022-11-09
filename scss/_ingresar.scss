@@ -1,4 +1,7 @@
-    @import "variables";
+    @mixin sizes($width, $height) {
+        height: $height;
+        width: $width;
+     }     
 
     .panel_ingresar {
         background-image: url("../Assets/Images/hamburguesa.jpg");
@@ -27,8 +30,7 @@
     }
 
     .usuario_contraseña {
-        width: 8cm;
-        height: 1cm;
+        @include sizes(8cm, 1cm);
         border-radius: 12px;
         border-color: $color-primario;
         font-size: 15px;
@@ -58,22 +60,19 @@
         flex-direction: row;
         justify-content: space-evenly;
         bottom: 0;
-        width: 100%;
-        height: 150px;
+        @include sizes(100%, 150px);
         border-top-color: #ffffff;
     }
 
     .logo_footer_ingresar {
         margin-top: 22px;
-        width: 125px;
-        height: 100px;
+        @include sizes(125px, 100px);
         padding: 0px;
         border-radius: 50%;
     }
 
     .footer_ingresar h1 {
-        width: 300px;
-        height: 30px;
+        @include sizes(300px, 30px);
         vertical-align: middle;
         font-size: $fuente-footer;
         margin-top: 65px;
@@ -83,8 +82,7 @@
     /* Vista mobile */
     @media (max-width: 768px) {
         .footer_ingresar h1 {
-            width: 300px;
-            height: 30px;
+            @include sizes(300px, 30px);
             vertical-align: middle;
             font-size: $fuente-footer-mobile;
             margin-top: 65px;
@@ -94,8 +92,7 @@
 
         .logo_footer_ingresar {
             margin-top: 22px;
-            width: 125px;
-            height: 100px;
+            @include sizes(125px, 100px);
             padding-left: $padding-logo-footer;
             border-radius: 50%;
         }
