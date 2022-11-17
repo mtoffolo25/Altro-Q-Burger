@@ -114,7 +114,7 @@
         border-radius: 50%;
     }
 
-    .footer_pedidos h1 {
+    .footer_pedidos p {
         @include sizes(300px, 30px);
         vertical-align: middle;
         font-size: $fuente-footer;
@@ -150,7 +150,7 @@
             width: 100%;
         }
 
-        .footer_pedidos h1 {
+        .footer_pedidos p {
             @include sizes(300px, 30px);
             vertical-align: middle;
             font-size: $fuente-footer-mobile;

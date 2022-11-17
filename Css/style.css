@@ -99,7 +99,7 @@ button p {
   padding: 0px;
   border-radius: 50%; }
 
-.footer_pedidos h1 {
+.footer_pedidos p {
   height: 30px;
   width: 300px;
   vertical-align: middle;
@@ -128,7 +128,7 @@ button p {
     font-stretch: expanded;
     text-align: center;
     width: 100%; }
-  .footer_pedidos h1 {
+  .footer_pedidos p {
     height: 30px;
     width: 300px;
     vertical-align: middle;
@@ -273,7 +273,7 @@ button p {
   padding: 0px;
   border-radius: 50%; }
 
-.footer_contacto h1 {
+.footer_contacto p {
   height: 30px;
   width: 300px;
   vertical-align: middle;
@@ -283,7 +283,7 @@ button p {
 
 /* Vista Mobile */
 @media (max-width: 768px) {
-  .footer_contacto h1 {
+  .footer_contacto p {
     height: 30px;
     width: 300px;
     vertical-align: middle;
@@ -438,7 +438,7 @@ button p {
   padding: 0px;
   border-radius: 50%; }
 
-.footer_sobrenosotros h1 {
+.footer_sobrenosotros p {
   height: 30px;
   width: 300px;
   vertical-align: middle;
@@ -461,7 +461,7 @@ button p {
     font-size: 20px; }
   .texto_2 .cuadro_textos div {
     width: 90%; }
-  .footer_sobrenosotros h1 {
+  .footer_sobrenosotros p {
     height: 30px;
     width: 300px;
     vertical-align: middle;
@@ -538,7 +538,7 @@ button p {
   padding: 0px;
   border-radius: 50%; }
 
-.footer_ingresar h1 {
+.footer_ingresar p {
   height: 30px;
   width: 300px;
   vertical-align: middle;
@@ -548,7 +548,7 @@ button p {
 
 /* Vista mobile */
 @media (max-width: 768px) {
-  .footer_ingresar h1 {
+  .footer_ingresar p {
     height: 30px;
     width: 300px;
     vertical-align: middle;
@@ -652,7 +652,7 @@ nav ul li a:hover {
   padding: 0px;
   border-radius: 50%; }
 
-.footer_index h1 {
+.footer_index p {
   height: 30px;
   width: 300px;
   text-align: center;
@@ -729,7 +729,7 @@ nav ul li a:hover {
     padding-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px; }
-  .footer_index h1 {
+  .footer_index p {
     height: 30px;
     width: 300px;
     text-align: center;

@@ -71,7 +71,7 @@
         border-radius: 50%;
     }
 
-    .footer_ingresar h1 {
+    .footer_ingresar p {
         @include sizes(300px, 30px);
         vertical-align: middle;
         font-size: $fuente-footer;
@@ -81,7 +81,7 @@
 
     /* Vista mobile */
     @media (max-width: 768px) {
-        .footer_ingresar h1 {
+        .footer_ingresar p {
             @include sizes(300px, 30px);
             vertical-align: middle;
             font-size: $fuente-footer-mobile;

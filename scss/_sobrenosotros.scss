@@ -127,7 +127,7 @@
         border-radius: 50%;
     }
 
-    .footer_sobrenosotros h1 {
+    .footer_sobrenosotros p {
         @include sizes(300px, 30px);
         vertical-align: middle;
         font-size: $fuente-footer;
@@ -157,7 +157,7 @@
             width: 90%;
         }
 
-        .footer_sobrenosotros h1 {
+        .footer_sobrenosotros p {
             @include sizes(300px, 30px);
             vertical-align: middle;
             font-size: $fuente-footer-mobile;

@@ -142,7 +142,7 @@
     border-radius: 50%;
 }
 
-.footer_contacto h1 {
+.footer_contacto p {
     @include sizes(300px, 30px);
     vertical-align: middle;
     font-size: $fuente-footer;
@@ -153,7 +153,7 @@
 /* Vista Mobile */
 
 @media (max-width: 768px) {
-    .footer_contacto h1 {
+    .footer_contacto p {
         @include sizes(300px, 30px);
         vertical-align: middle;
         font-size: $fuente-footer-mobile;
