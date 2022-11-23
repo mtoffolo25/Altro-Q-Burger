@@ -50,23 +50,24 @@
     padding-top: 35px;
 }
 
-nav ul li {
-    list-style: none;
-    padding-top: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-}
+nav ul 
+        li {
+            list-style: none;
+            padding-top: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 100%;
 
-nav ul li a {
-    text-decoration: none;
-    color: #26263a;
-    font-weight: bold;
-    transition: 0.5s;
-}
+            a {
+                text-decoration: none;
+                color: #26263a;
+                font-weight: bold;
+                transition: 0.5s;
 
-nav ul li a:hover {
-    color: $color-primario;
-}
+                a:hover {
+                    color: $color-primario;
+                }
+            }
+        }
 
 .inicio {
     color: $color-primario;
@@ -115,12 +116,14 @@ nav ul li a:hover {
     border-radius: 50%;
 }
 
-.footer_index p {
-    @include sizes(300px, 30px);
-    text-align: center;
-    font-size: $fuente-footer;
-    margin-top: 65px;
-    color: black;
+.footer_index {
+    p {
+        @include sizes(300px, 30px);
+        text-align: center;
+        font-size: $fuente-footer;
+        margin-top: 65px;
+        color: black;
+    }
 }
 
 /* Vista mobile */
@@ -208,18 +211,21 @@ nav ul li a:hover {
     }
 
     nav ul li {
-        list-style: none;
-        padding-top: 10px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 10px;
+                list-style: none;
+                padding-top: 10px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 10px;
     }
+        
 
-    .footer_index p {
-        @include sizes(300px, 30px);
-        text-align: center;
-        font-size: $fuente-footer-mobile;
-        margin-top: 65px;
-        color: black;
+    .footer_index {
+        p {
+            @include sizes(300px, 30px);
+            text-align: center;
+            font-size: $fuente-footer-mobile;
+            margin-top: 65px;
+            color: black;
+        }
     }
 
     .logo_footer {

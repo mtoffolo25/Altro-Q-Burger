@@ -1,7 +1,7 @@
     @mixin sizes($width, $height) {
         height: $height;
         width: $width;
-     }     
+    }
 
     .pedidos {
         color: $color-primario;
@@ -12,41 +12,64 @@
         grid-template-areas: "cheese doblecuarto onion bacon clasica";
         grid-template-columns: 20% 20% 20% 20% 20%;
         @include sizes(100%, 100%);
+
+        div {
+            @include sizes(100%, 100vh);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: wheat;
+            transition: 1s;
+            opacity: 85%;
+
+
+
+            h1 {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 25px;
+                font-stretch: ultra-condensed;
+                font-variant: small-caps;
+                margin-bottom: 700px;
+                color: $color-primario;
+                position: absolute;
+                font-stretch: expanded;
+                text-align: center;
+                width: 5cm;
+            }
+        }
     }
 
-    .tipos_hamburguesas div {
-        @include sizes(100%, 100vh);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: wheat;
-        transition: 1s;
-        opacity: 85%;
-    }
-
-    .tipos_hamburguesas div:hover {
+    div:hover {
         transform: scale(1.01);
         opacity: 100%;
     }
 
-    .tipos_hamburguesas div img {
-        @include sizes(100%, 100%);
-        object-fit: cover;
-        position: relative;
+    .tipos_hamburguesas {
+        img {
+            @include sizes(100%, 100%);
+            object-fit: cover;
+            position: relative;
+        }
     }
 
-    .tipos_hamburguesas div h1 {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 25px;
-        font-stretch: ultra-condensed;
-        font-variant: small-caps;
-        margin-bottom: 700px;
-        color: $color-primario;
-        position: absolute;
-        font-stretch: expanded;
-        text-align: center;
-        width: 5cm;
+    .tipos_hamburguesas {
+        button {
+            text-align: center;
+            border-radius: 25px;
+            background-color: #26263a;
+            color: #ffffff;
+            width: 6cm;
+            margin-top: 500px;
+            position: absolute;
+        }
+    }
+
+    button:hover {
+        background-color: $color-primario;
+        color: #ffffff;
+        transform: scale(1.05);
+        border-radius: 25px;
     }
 
     .cheese {
@@ -74,22 +97,6 @@
         opacity: 80%;
     }
 
-    .tipos_hamburguesas div button {
-        text-align: center;
-        border-radius: 25px;
-        background-color: #26263a;
-        color: #ffffff;
-        width: 6cm;
-        margin-top: 500px;
-        position: absolute;
-    }
-
-    .tipos_hamburguesas div button:hover {
-        background-color: $color-primario;
-        color: #ffffff;
-        transform: scale(1.1);
-    }
-
     button p {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 18px;
@@ -105,6 +112,15 @@
         bottom: 0;
         @include sizes(100%, 150px);
         border-top-color: #ffffff;
+
+        p {
+            @include sizes(300px, 30px);
+            vertical-align: middle;
+            font-size: $fuente-footer;
+            margin-top: 65px;
+            color: black;
+            text-align: center;
+        }
     }
 
     .logo_footer_pedidos {
@@ -112,15 +128,6 @@
         @include sizes(125px, 100px);
         padding: 0px;
         border-radius: 50%;
-    }
-
-    .footer_pedidos p {
-        @include sizes(300px, 30px);
-        vertical-align: middle;
-        font-size: $fuente-footer;
-        margin-top: 65px;
-        color: black;
-        text-align: center;
     }
 
     /* Vista Mobile */
@@ -148,6 +155,16 @@
             font-stretch: expanded;
             text-align: center;
             width: 100%;
+
+            button {
+                text-align: center;
+                border-radius: 25px;
+                background-color: #26263a;
+                color: #ffffff;
+                width: 6cm;
+                margin-top: 500px;
+                position: absolute;
+            }
         }
 
         .footer_pedidos p {
@@ -164,15 +181,5 @@
             @include sizes(125px, 100px);
             padding-left: $padding-logo-footer;
             border-radius: 50%;
-        }
-
-        .tipos_hamburguesas div button {
-            text-align: center;
-            border-radius: 25px;
-            background-color: #26263a;
-            color: #ffffff;
-            width: 6cm;
-            margin-top: 500px;
-            position: absolute;
         }
     }
